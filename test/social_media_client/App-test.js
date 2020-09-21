@@ -1,6 +1,5 @@
 import {expect} from 'chai'; 
 import {shallow} from 'enzyme'; 
-import { isMainThread } from 'worker_threads';
 import App from social_media_client/src/App; 
 
 const wrapper = shallow(<App />); 
