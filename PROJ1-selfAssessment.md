@@ -14,11 +14,11 @@
 || Issues reports: there are many|3|
 ||  issues are being  closed|2|
 || License: exists|4|
-|| DOI badge: exists |4|
+|| DOI badge: exists |2|
 ||Docs: doco generated , format not ugly |4|
 ||Docs: what: point descriptions of each class/function (in isolation) |4|
-||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z||
-||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing||
+||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|2|
+||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|2|
 ||Docs: 3 minute video, posted to YouTube. That convinces people why they want to work on your code.|4|
 || (hard) code conforms to some known patterns |4
 |Tools Matter| Use of version control tools|4|
@@ -26,7 +26,7 @@
 || Repo has an up-to-date requirements.txt file|4|
 || Repo does not have "ignore" files.|4|
 ||Use of  style checkers |0|
-||Extensive Use of  style checkers ||
+||Extensive Use of  style checkers |0|
 || Use of code  formatters. |0|
 || Extensive Use of code  formatters. |0|
 || Use of syntax checkers. |0|
@@ -34,7 +34,7 @@
 || Use of code coverage |0|
 || Extensive use of code coverage |0|
 || other automated analysis tools|2|
-|| Extensive use of  other automated analysis tools||
+|| Extensive use of  other automated analysis tools|0|
 || test cases exist|0|
 || test cases are routinely executed|0|
 | Consensus-oriented model| the files CONTRIBUTING.md and CODEOFCONDUCT.md has have multiple edits by multiple people|4|
@@ -43,8 +43,8 @@
 || issues are discussed before they are closed|4|
 || Chat channel: exists|2|
 || Chat channel: is active |2|
-|| Test cases:.a large proportion of the issues related to handling failing cases.||
-| Zero internal boundaries | evidence that the whole team is using the same tools: everyone can get to all tools and files||
+|| Test cases:.a large proportion of the issues related to handling failing cases.|0|
+| Zero internal boundaries | evidence that the whole team is using the same tools: everyone can get to all tools and files|4|
 | | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|4|
 | | evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|4|
 | | evidence that the members of the team are working across multiple places in the code base|2|
