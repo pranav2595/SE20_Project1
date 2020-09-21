@@ -17,6 +17,7 @@ import ChatIcon from '@material-ui/icons/Chat';
 // Redux
 import { connect } from 'react-redux';
 import { markNotificationsRead } from '../../redux/actions/userActions';
+import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 
 class Notifications extends Component {
   state = {
@@ -118,11 +119,11 @@ Notifications.propTypes = {
   notifications: PropTypes.array.isRequired
 };
 
-const stateToProps = (state) => ({
+const mapStateToProps = (state) => ({
   notifications: state.user.notifications
 });
 
 export default connect(
-    stateToProps,
+    mapStateToProps,
   { markNotificationsRead }
 )(Notifications);
