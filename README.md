@@ -17,7 +17,9 @@ Call it your new hangout place!
 ## 2: Steps to run the project locally:
 
 run `npm install`
+
 run `npm start`
+
 go to [http://localhost:3000](http://localhost:3000)
 
 ## Link to the video
