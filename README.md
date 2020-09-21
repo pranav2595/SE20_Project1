@@ -6,7 +6,9 @@ Call it your new hangout place!
 
 ## 1: To go to the live app, visit the link down below:
 
-[Visit here!](https://socialape-c629a.web.app/login)
+### 1. [Visit here!](https://socialape-c629a.web.app/login)
+### 2. 
+
 
 ## 2: Steps to run the project locally:
 
