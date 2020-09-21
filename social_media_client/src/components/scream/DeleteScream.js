@@ -37,7 +37,7 @@ class DeleteScream extends Component {
   };
   render() {
     const { classes } = this.props;
-
+    const { open } = this.state; 
     return (
       <Fragment>
         <MyButton
@@ -48,7 +48,7 @@ class DeleteScream extends Component {
           <DeleteOutline color="secondary" />
         </MyButton>
         <Dialog
-          open={this.state.open}
+          open=open
           onClose={this.handleClose}
           fullWidth
           maxWidth="sm"
