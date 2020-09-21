@@ -33,8 +33,10 @@ class user extends Component {
       .catch((err) => console.log(err));
   }
   render() {
-    const { screams, loading } = this.props.data;
-    const { screamIdParam } = this.state;
+    let data= this.props.data;
+    let state= this.state;
+    const { screams, loading } = data;
+    const { screamIdParam } = state;
 
     const screamsMarkup = loading ? (
       <ScreamSkeleton />

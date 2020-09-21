@@ -69,12 +69,13 @@ class ScreamDialog extends Component {
     window.history.pushState(null, null, newPath);
 
     this.setState({ open: true, oldPath, newPath });
-    this.props.getScream(this.props.screamId);
+    this.props.getScream(screamId);
   };
   handleClose = () => {
     window.history.pushState(null, null, this.state.oldPath);
     this.setState({ open: false });
-    this.props.clearErrors();
+    const clearErrors= this.props;
+    clearErrors.clearErrors();
   };
 
   render() {
