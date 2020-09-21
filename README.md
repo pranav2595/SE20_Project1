@@ -7,7 +7,7 @@ Call it your new hangout place!
 ## 1: To go to the live app, visit the link down below:
 
 ### 1. [Visit here!](https://socialape-c629a.web.app/login)
-### 2. [SCREAM Main Page] https://github.com/pranav2595/SE20_Project1/issues/5#issue-705372044
+### 2. [SCREAM Main Page](https://github.com/pranav2595/SE20_Project1/issues/5#issue-705372044)
 
 
 ## 2: Steps to run the project locally:
