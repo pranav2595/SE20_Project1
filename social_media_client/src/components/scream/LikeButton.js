@@ -21,10 +21,12 @@ export class LikeButton extends Component {
     else return false;
   };
   likeScream = () => {
-    this.props.likeScream(this.props.screamId);
+    const { screamId, likeScream } = this.props;
+    likeScream(screamId);
   };
   unlikeScream = () => {
-    this.props.unlikeScream(this.props.screamId);
+    const { screamId, unlikeScream } = this.props;
+    unlikeScream(screamId); 
   };
   render() {
     const { authenticated } = this.props.user;
