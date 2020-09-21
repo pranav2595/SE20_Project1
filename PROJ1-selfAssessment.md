@@ -6,12 +6,12 @@
 || group meetings had a round robin speaking order|4|
 || group meetings had a moderator that managed the round robin|2|
 || group meeting moderator rotated among  the group|4|
-|| code conforms to some packaging standard||
-|| code has can be downloaded from some standard package manager|
-| |workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)||
+|| code conforms to some packaging standard|4|
+|| code has can be downloaded from some standard package manager|4|
+|| workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)|4|
 || Number of commits|4|
 || Number of commits: by different people|4|
-|| Issues reports: there are many||
+|| Issues reports: there are many|3|
 ||  issues are being  closed|2|
 || License: exists|4|
 || DOI badge: exists |4|
@@ -20,7 +20,7 @@
 ||Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z||
 ||Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing||
 ||Docs: 3 minute video, posted to YouTube. That convinces people why they want to work on your code.|4|
-|| (hard) code conforms to some known patterns |
+|| (hard) code conforms to some known patterns |4
 |Tools Matter| Use of version control tools|4|
 || Extensive use of version control tools |2|
 || Repo has an up-to-date requirements.txt file|4|
