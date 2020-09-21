@@ -55,14 +55,14 @@ class EditDetails extends Component {
     });
   };
   handleSubmit = () => {
-    const userDetails = {
+    const userData = {
       bio: this.state.bio,
       website: this.state.website,
       location: this.state.location
     };
     const { editUserDetails } = this.props;
-    //this.props.editUserDetails(userDetails);
-    editUserDetails(userDetails);
+    //this.props.editUserDetails(userData);
+    editUserDetails(userData);
     this.handleClose();
   };
   render() {
