@@ -33,7 +33,8 @@ class CommentForm extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    const { submitComment, screamId } = this.props;
+    const { submitComment} = this.props;
+    const {screamId } = this.props;
     const { body } = this.state;
     //this.props.submitComment(this.props.screamId, { body: this.state.body });
     submitComment(screamId, { body: body });
