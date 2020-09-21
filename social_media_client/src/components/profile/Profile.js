@@ -27,17 +27,22 @@ const styles = (theme) => ({
 
 class Profile extends Component {
   handleImageChange = (event) => {
+
     const image = event.target.files[0];
     const formData = new FormData();
     formData.append('image', image, image.name);
-    this.props.uploadImage(formData);
+    const { uploadImage } = this.props;
+    //this.props.uploadImage(formData);
+    uploadImage(formData);
   };
   handleEditPicture = () => {
     const fileInput = document.getElementById('imageInput');
     fileInput.click();
   };
   handleLogout = () => {
-    this.props.logoutUser();
+    const { logoutUser } = this.props;
+    //this.props.logoutUser();
+    logoutUser();
   };
   render() {
     const {
@@ -140,18 +145,18 @@ class Profile extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  user: state.user
-});
-
-const mapActionsToProps = { logoutUser, uploadImage };
-
 Profile.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   uploadImage: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired,
   classes: PropTypes.object.isRequired
 };
+
+const mapStateToProps = (state) => ({
+  user: state.user
+});
+
+const mapActionsToProps = { logoutUser, uploadImage };
 
 export default connect(
   mapStateToProps,

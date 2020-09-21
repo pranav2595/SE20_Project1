@@ -37,8 +37,9 @@ class EditDetails extends Component {
     });
   };
   handleOpen = () => {
+    const { credentials } = this.props;
     this.setState({ open: true });
-    this.mapUserDetailsToState(this.props.credentials);
+    this.mapUserDetailsToState(credentials);
   };
   handleClose = () => {
     this.setState({ open: false });
@@ -59,7 +60,9 @@ class EditDetails extends Component {
       website: this.state.website,
       location: this.state.location
     };
-    this.props.editUserDetails(userDetails);
+    const { editUserDetails } = this.props;
+    //this.props.editUserDetails(userDetails);
+    editUserDetails(userDetails);
     this.handleClose();
   };
   render() {

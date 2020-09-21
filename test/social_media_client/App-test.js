@@ -19,5 +19,5 @@ describe('App Component Testing', function() {
 
     it('has Switch', function() {
         expect(wrapper.find('Switch')).to.equal(true);
-    });
+    }); 
 });

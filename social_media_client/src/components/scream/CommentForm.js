@@ -33,12 +33,16 @@ class CommentForm extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.submitComment(this.props.screamId, { body: this.state.body });
+    const { submitComment, screamId } = this.props;
+    const { body } = this.state;
+    //this.props.submitComment(this.props.screamId, { body: this.state.body });
+    submitComment(screamId, { body: body });
   };
 
   render() {
     const { classes, authenticated } = this.props;
-    const errors = this.state.errors;
+    const { errors } = this.state;
+    //const errors = this.state.errors;
 
     const commentFormMarkup = authenticated ? (
       <Grid item sm={12} style={{ textAlign: 'center' }}>
