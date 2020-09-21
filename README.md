@@ -11,6 +11,7 @@ Call it your new hangout place!
 ![image](https://user-images.githubusercontent.com/62627590/93743384-f968b100-fbbd-11ea-90bc-04c86a5fc348.png)
 3. Login if you already have an account. Otherwise, click on "SIGNUP" on the top. 
 4. The following page should show if are trying to create a new account. Fill in the relevant information and click "SIGNUP" on the bottom. 
+![image](https://user-images.githubusercontent.com/62627590/93743685-75fb8f80-fbbe-11ea-8b29-e0b7590d08fd.png)
 
 
 ## 2: Steps to run the project locally:
