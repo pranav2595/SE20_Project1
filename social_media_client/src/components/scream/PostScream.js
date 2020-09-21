@@ -52,7 +52,8 @@ class PostScream extends Component {
     this.setState({ open: true });
   };
   handleClose = () => {
-    this.props.clearErrors();
+    const { clearErrors } = this.props;
+    clearErrors();
     this.setState({ open: false, errors: {} });
   };
   handleChange = (event) => {
