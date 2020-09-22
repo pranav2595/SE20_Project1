@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/295059730.svg)](https://zenodo.org/badge/latestdoi/295059730)
+
 # SE20 Project 1 - SCREAM
 
 ## What's SCREAM about?
