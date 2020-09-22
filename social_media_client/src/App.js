@@ -26,6 +26,7 @@ const theme = createMuiTheme(themeObject);
 axios.defaults.baseURL =
   "https://europe-west1-socialape-c629a.cloudfunctions.net/api";
 
+// user login authorization
 const token = localStorage.FBIdToken;
 if (token) {
   const decodedToken = jwtDecode(token);
@@ -39,6 +40,7 @@ if (token) {
   }
 }
 
+// main component which renders the app shell
 class App extends Component {
   render() {
     return (
