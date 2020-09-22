@@ -22,7 +22,7 @@
 ||Docs: 3 minute video, posted to YouTube. That convinces people why they want to work on your code.|4|
 || (hard) code conforms to some known patterns |4
 |Tools Matter| Use of version control tools|4|
-|| Extensive use of version control tools |2|
+|| Extensive use of version control tools |4|
 || Repo has an up-to-date requirements.txt file|4|
 || Repo does not have "ignore" files.|4|
 ||Use of  style checkers |0|
