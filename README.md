@@ -19,11 +19,13 @@ Call it your new hangout place!
 
 ## 2: Steps to run the project locally:
 
+Navigate to ./social_media_client
+
 run `npm install`
 
 run `npm start`
 
-go to [http://localhost:3000](http://localhost:3000)
+go to [http://localhost:3000](http://localhost:3000) (though it should pop-up automatically, if it doesn't click this link.)
 
 ## Link to the video
 [You can find the video here](https://youtu.be/ryBL-0Kn6u8)
