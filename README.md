@@ -1,5 +1,9 @@
 [![DOI](https://zenodo.org/badge/295059730.svg)](https://zenodo.org/badge/latestdoi/295059730)
 
+
+[![Build Status](https://travis-ci.com/pranav2595/SE20_Project1.svg?branch=master)](https://travis-ci.com/pranav2595/SE20_Project1)
+
+
 # SE20 Project 1 - SCREAM
 
 ## What's SCREAM about?
