@@ -119,11 +119,12 @@ Notifications.propTypes = {
   notifications: PropTypes.array.isRequired
 };
 
-const mapStateToProps = (state) => ({
+// mapStateToProps name throws error.
+const mapStateToProps2 = (state) => ({
   notifications: state.user.notifications
 });
 
 export default connect(
-    mapStateToProps,
+    mapStateToProps2,
   { markNotificationsRead }
 )(Notifications);

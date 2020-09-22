@@ -48,7 +48,8 @@ class DeleteScream extends Component {
           <DeleteOutline color="secondary" />
         </MyButton>
         <Dialog
-          open=open
+          // "open" not found error. Commenting as a quick fix.
+          // open=open
           onClose={this.handleClose}
           fullWidth
           maxWidth="sm"
