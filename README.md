@@ -42,6 +42,9 @@ Currently looking for people
 
 Keep a look out on this space for more updates!
 
+## Tech Stack
+ReactJs,Firebase,Redux,ExpressJS
+
 ## Group Info
 1. Yash Thakkar (yrthakka@ncsu.edu)
 2. Pururaj Dave (pdave2@ncsu.edu)
