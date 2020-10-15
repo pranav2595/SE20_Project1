@@ -44,3 +44,6 @@ Assigned to: Dhanraj
 15. Add feature: follow other accounts
 Allow users to follow other users.
 Assigned to: Vijay
+16. Add feature: dispaly profile pictures
+Display profile pictures with the posts
+Assigned to:
