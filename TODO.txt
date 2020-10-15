@@ -20,8 +20,8 @@ Assigned to: Ananya
 7. Resolve bug: Unable to load details view of scream post
 On clicking the post, it should display the details.
 Assigned to: Dhanraj
-8. Improve Documentation
-Need to work on the documentation and make it user-friendly.
+8. ER diagrams
+Include an ER diagram for the database
 Assigned to: Sakshi
 9. Add feature: Upload pictures as screams
 Add an option to upload images in the post.
@@ -46,4 +46,10 @@ Allow users to follow other users.
 Assigned to: Vijay
 16. Add feature: dispaly profile pictures
 Display profile pictures with the posts
+Assigned to:
+17. Use Case
+Include use case diagrams
+Assigned to:
+18. Class Diagram:
+Include the class diagram
 Assigned to:
