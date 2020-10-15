@@ -14,7 +14,7 @@ Assigned to: Ayush
 5. Perform Unit Testing
 Add test cases and perform regular testing.
 Assigned to: Vijay
-6. Add feature: Add comments
+6. Add feature: Comment button
 Include the feature for user to add comments to the posts.
 Assigned to: Ananya
 7. Resolve bug: Unable to load details view of scream post
