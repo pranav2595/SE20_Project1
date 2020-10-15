@@ -2,7 +2,7 @@ Tasks with assignee:
 1. Resolve Header Issue
 The header always shows login and signup even after a user is logged in. 
 Assigned to: Sakshi
-2. Enhance Feature: Profile Page
+2. Enhance Feature: Fix the profile section
 Add more user-customized content to Profile Page.
 Assigned to: Ananya
 3. Resolve bug: Content load time issues
