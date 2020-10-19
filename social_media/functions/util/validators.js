@@ -12,17 +12,19 @@ const hasNoWhiteSpace = (string) => {
 exports.validateSignupData = (data) => {
   let errors = {};
 
-  if (hasNoWhiteSpace(data.email)) {
-    errors.email = "Must not be empty";
-  } else if (!isEmail(data.email)) {
+  console.log(data);
+  if (data.email == undefined || !isEmail(data.email) ) {
     errors.email = "Must be a valid email address";
-  }
+  } else if (hasNoWhiteSpace(data.email)) {
+    errors.email = "Must not be empty";
+  } 
 
-  if (hasNoWhiteSpace(data.password)) errors.password = "Must not be empty";
+  if (data.password == undefined || hasNoWhiteSpace(data.password)) errors.password = "Must not be empty";
+
   if (data.password !== data.confirmPassword)
     errors.confirmPassword = "Passwords must match";
-  if (hasNoWhiteSpace(data.handle)) errors.handle = "Must not be empty";
-
+  if (data.handle == undefined || hasNoWhiteSpace(data.handle)) errors.handle = "Must not be empty";
+  
   return {
     errors,
     valid: Object.keys(errors).length === 0 ? true : false,

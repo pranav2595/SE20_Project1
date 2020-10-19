@@ -62,6 +62,8 @@ exports.signup = (req, res) => {
       console.error(err);
       if (err.code === "auth/email-already-in-use") {
         return res.status(400).json({ email: "Email is already is use" });
+      } else if (err.code === "auth/weak-password") {
+        return res.status(400).json({ password: "Password should be atleast 6 characters"});
       } else {
         return res
           .status(500)
