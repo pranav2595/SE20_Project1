@@ -50,7 +50,7 @@ exports.signup = (req, res) => {
         email: newUser.email,
         createdAt: new Date().toISOString(),
         //TODO Append token to imageUrl. Work around just add token from image in storage.
-        imageUrl: `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${noImg}?alt=media`,
+        imageUrl: `https://firebasestorage.googleapis.com/v0/b/socialape-c629a.appspot.com/o/${noImg}?alt=media`,
         userId,
       };
       return db.doc(`/users/${newUser.handle}`).set(userCredentials);
@@ -243,9 +243,9 @@ exports.uploadImage = (req, res) => {
       })
       .then(() => {
         // Append token to url
-        const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${imageFileName}?alt=media&token=${generatedToken}`;
+        const imageUrl = `https://firebasestorage.googleapis.com/v0/b/socialape-c629a.appspot.com/o/${imageFileName}?alt=media&token=${generatedToken}`;
         return db.doc(`/users/${req.user.handle}`).update({ imageUrl });
-      })
+      }) 
       .then(() => {
         return res.json({ message: "image uploaded successfully" });
       })
