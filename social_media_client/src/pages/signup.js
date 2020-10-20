@@ -52,13 +52,23 @@ class signup extends Component {
       [event.target.name]: event.target.value
     });
   };
+/*
+  checkPasswordLength = (errors) => {
+      if(this.state.password.length < 6){
+        errors.password = 'Password should be atleast 6 characters';
+        delete errors.general;
+      }
+      return errors;
+  };
+*/
   render() {
     const {
       classes,
       UI: { loading }
     } = this.props;
     const { errors } = this.state;
-
+    
+    console.log(errors);
     return (
       <Grid container className={classes.form}>
         <Grid item sm />
@@ -80,6 +90,7 @@ class signup extends Component {
               onChange={this.handleChange}
               fullWidth
             />
+            
             <TextField
               id="password"
               name="password"
@@ -116,8 +127,11 @@ class signup extends Component {
               onChange={this.handleChange}
               fullWidth
             />
-            {errors.general && (
-              <Typography variant="body2" className={classes.customError}>
+            {errors.general && this.state.password.length < 6 ? 
+              (<Typography variant="body2" className={classes.customError}>
+                Passwords should be atleast 6 characters long
+              </Typography>):
+              (<Typography variant="body2" className={classes.customError}>
                 {errors.general}
               </Typography>
             )}
