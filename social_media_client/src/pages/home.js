@@ -16,9 +16,9 @@ class home extends Component {
   render() {
     if(this.props.data){
       const { screams, loading } = this.props.data;
-      // if(screams){}
-      // else{ screams = [] } //will throw a read-only error if uncommented.
-      let recentScreamsMarkup = !loading ? (
+      //if(screams){}
+      //else{ screams = [] } //will throw a read-only error if uncommented.
+      let recentScreamsMarkup = !loading ? ( screams === null ? <ScreamSkeleton/> :
         screams.map((scream) => <Scream key={scream.screamId} scream={scream} />)
       ) : (
         <ScreamSkeleton />
