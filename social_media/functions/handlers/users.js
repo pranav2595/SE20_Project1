@@ -50,7 +50,7 @@ exports.signup = (req, res) => {
         email: newUser.email,
         createdAt: new Date().toISOString(),
         //TODO Append token to imageUrl. Work around just add token from image in storage.
-        imageUrl: `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${noImg}?alt=media`,
+        imageUrl: `https://firebasestorage.googleapis.com/v0/b/socialape-c629a.appspot.com/o/${noImg}?alt=media`,
         userId,
       };
       return db.doc(`/users/${newUser.handle}`).set(userCredentials);
@@ -61,12 +61,14 @@ exports.signup = (req, res) => {
     .catch((err) => {
       console.error(err);
       if (err.code === "auth/email-already-in-use") {
-        return res.status(400).json({ email: "Email is already is use" });
-      } else {
+        return res.status(400).json({ email: "Email is already is use" }); }
+      if (err.code === "auth/weak-password")
+        return res.status(400).json({ password: "Password should be atleast 6 characters"});
+      else {
         return res
           .status(500)
           .json({ general: "Something went wrong, please try again!" });
-      }
+        }
     });
 };
 // Log user in
@@ -103,6 +105,8 @@ exports.login = (req, res) => {
 exports.addUserDetails = (req, res) => {
   let userDetails = reduceUserDetails(req.body);
 
+  console.log(userDetails);
+  
   db.doc(`/users/${req.user.handle}`)
     .update(userDetails)
     .then(() => {
@@ -241,9 +245,9 @@ exports.uploadImage = (req, res) => {
       })
       .then(() => {
         // Append token to url
-        const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${imageFileName}?alt=media&token=${generatedToken}`;
+        const imageUrl = `https://firebasestorage.googleapis.com/v0/b/socialape-c629a.appspot.com/o/${imageFileName}?alt=media&token=${generatedToken}`;
         return db.doc(`/users/${req.user.handle}`).update({ imageUrl });
-      })
+      }) 
       .then(() => {
         return res.json({ message: "image uploaded successfully" });
       })
