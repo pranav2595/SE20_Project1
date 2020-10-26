@@ -62,7 +62,7 @@ const StaticProfile = (props) => {
         </div>
       </div>
     </Paper>
-  );
+   );
 };
 
 StaticProfile.propTypes = {

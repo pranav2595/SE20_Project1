@@ -49,7 +49,7 @@ class DeleteScream extends Component {
         </MyButton>
         <Dialog
           // "open" not found error. Commenting as a quick fix.
-          // open=open
+          open={open}
           onClose={this.handleClose}
           fullWidth
           maxWidth="sm"
